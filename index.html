@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Styles/common.css">
+    <link rel="stylesheet" href="Styles/header.css"/>
+    <link rel="stylesheet" href="Styles/navbar-side.css"/>
+    <link rel="stylesheet" href="Styles/tasks.css"/>
+    <link rel="stylesheet" href="Styles/task-wrapper.css"/>
+    <link rel="stylesheet" href="Styles/Form.css"/>
+    <link rel="stylesheet" href="Styles/badges.css"/>
+
+    <link rel="stylesheet" href="Libs/font-awesome-4.4.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+            <nav id="header-nav">
+                <ul>
+                    <li><a href="#/backlog">Backlog</a></li>
+                    <li><a href="#/tasks">Tasks</a></li>
+                    <li><a href="#/projects">Projects</a></li>
+                    <li><a href="#/log">Log</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <div id="main_container">
+            <div class="floated_box" id="navbar-side">
+                <h3>Lists</h3>
+                <ul>
+                    <a href="#"><li><i class="fa fa-list-alt"></i> My Tasks <div id="my-tasks-badge" class="badge sidebar-badge">12</div></li></a>
+                    <a href="#"><li><i class="fa fa-check-square-o"></i>Check List <div id="check-list-badge" class="badge sidebar-badge">6</div></li></a>
+                    <a href="#"><li><i class="fa fa-eye"></i>Watching <div id="watching-badge" class="badge sidebar-badge white">1</div></li></a>
+                    <a href="#"><li><i class="fa fa-users"></i>Team Tasks <div id="team-tasks-badge" class="badge  sidebar-badge white">14</div></li></a>
+                </ul>
+            </div>
+            <div class="floated_box" id="task-wrapper">
+                <h4 id="task-board-title">Tasks Board</h4>
+
+
+            </div>
+            <form action="post" class="floated_box" id="project-form">
+                <label for="project-dropdown" id="dropdown-label" class="form-element">Choose a project</label>
+                <label for="version" class="form-element">Version</label>
+                <br/>
+                <div name="" id="project-dropdown" class="form-element">
+                </div>
+                <select name="" id="version" class="form-element">
+                </select>
+                <br/>
+                <label for="asignee" class="form-element">Asignee</label>
+                <br/>
+                <select name="" id="asignee" class="form-element form-input">
+                </select>
+                <br/>
+                <label for="project-title" class="form-element">Title</label>
+                <br/>
+                <input type="text" id="project-title" class="form-element form-input"/>
+                <br/>
+                <label for="project-description" class="form-element">Description</label><br/>
+                <textarea id="project-description" rows="8" cols="58" class="form-element"/></textarea>
+                <button id="project-button">+ ADD</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<!--Libs-->
+<script src="Libs\jquery\dist\jquery.js"></script>
+<script src="Libs/handlebars-v3.0.3.js"></script>
+<script src="Libs/jquery.ddslick.min.js"></script>
+<script src="Libs/ckeditor/ckeditor.js"></script>
+
+<!---->
+<script src="js/utilities.js"></script>
+
+<!--Models-->
+<script src="js/model/JsonRequester.js"></script>
+<script src="js/model/WaitingModel.js"></script>
+<script src="js/model/InProgressModel.js"></script>
+<script src="js/model/ConfirmModel.js"></script>
+<!---->
+
+<!--ContainerViews-->
+<script src="js/view/waitingContainerView.js"></script>
+<script src="js/view/inProgressContainerView.js"></script>
+<script src="js/view/confirmContainerView.js"></script>
+<!---->
+
+<!--Views-->
+<script src="js/view/ConfirmView.js"></script>
+<script src="js/view/WaitingView.js"></script>
+<script src="js/view/InProgressView.js"></script>
+<script src="js/view/postWaitingTaskView.js"></script>
+<script src="js/view/postInProgressTaskView.js"></script>
+<script src="js/view/postConfirmTaskView.js"></script>
+
+<!--Controlelrs-->
+<script src="js/Controllers/ConfirmController.js"></script>
+<script src="js/Controllers/InProgressController.js"></script>
+<script src="js/Controllers/WaitingController.js"></script>
+
+<script src="js/Main.js"></script>
+
+</html>

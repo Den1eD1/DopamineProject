@@ -1,0 +1,68 @@
+.dd-select {
+    height: 40px;
+}
+
+.dd-option-image {
+    width: 30px;
+    height: 30px;
+}
+
+.dd-selected-image {
+    width: 25px;
+    height: 25px;
+}
+
+.dd-selected {
+    height: 40px;
+}
+
+.dd-selected-text{
+    line-height: 20px!important;
+}
+
+
+#project-button{
+    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: #74AF43;
+    color: white;
+}
+
+.form-element {
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+
+.form-input {
+    width: 94%;
+    height: 30px;
+}
+
+#project-form{
+    margin: 20px;
+    width: 450px;
+}
+
+#project-title {
+    width: 450px;
+    border: 1px solid #CCCCCC;
+}
+
+#version {
+    display: inline-block;
+    height: 40px;
+    border: 1px solid #EFEFEF;
+}
+
+#dropdown-label{
+    margin-right: 62%;
+}
+
+#project-dropdown {
+    display: inline-block;
+    margin-right: 3%;
+    width: 80%;
+    height: 30px;
+}

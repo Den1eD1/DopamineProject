@@ -1,0 +1,31 @@
+#navbar-side {
+    border-right: 1px solid #EEEEEE;
+    width: 11%;
+}
+#navbar-side ul a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbar-side ul a li i {
+    margin-right: 10px;
+}
+
+#navbar-side ul li{
+    padding: 10px;
+    border-bottom: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 0px #DCDCDC;
+}
+
+#navbar-side > h3 {
+    padding:5px ;
+    border-bottom: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 0px #DCDCDC;
+}
+
+#navbar-side ul li div {
+    width: 15px;
+    height: 15px;
+    background-color: #7E7E7E;
+    border-radius: 20%;
+}

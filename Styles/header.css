@@ -1,0 +1,38 @@
+#header {
+    margin: 0;
+}
+
+#header #header-nav {
+    background-color: #4B4B4B;
+    width: 100%;
+    height: 60px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#header #header-nav ul li{
+    display: inline-block;
+    background-color: #565656;
+    padding: 20px;
+    margin: 0;
+}
+
+#header #header-nav ul li:active{
+    background-color:#4B4B4B;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+#header #header-nav ul li a {
+    color: white;
+}
+
+#header #header-nav ul li:hover {
+    background-color: #404040;
+}

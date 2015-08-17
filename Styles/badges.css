@@ -1,0 +1,44 @@
+#waiting-badge{
+    margin-left: 80px;
+}
+
+#inProgress-badge{
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-left: 50px;
+}
+
+#confirm-badge{
+    margin-left: 20px;
+}
+
+
+
+.badge {
+
+    display: inline;
+    color: white;
+    text-align: center;
+}
+
+.sidebar-badge {
+    display: inline-block;
+    padding: 5px;
+}
+
+i{
+    font-size:18px!important;
+}
+
+#my-tasks-badge {
+    margin-left: 12px;
+}
+
+#check-list-badge {
+    margin-left: 11px;
+}
+
+#watching-badge {
+    margin-left: 15px;
+}
+
